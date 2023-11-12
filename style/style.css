@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RR';
+}
+
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+h1{
+    font-family: 'RR';
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    padding: 0 30px;
+}
+.header_nav-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.header_nav-link{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    padding: 30px 15px;
+    display: block;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+
+}
+.header_nav-link:hover{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.header_form{
+    display: flex;
+    max-width: 290px;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.header_form-text{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 12px;
+    width: 100%;
+}
+.header_form-btn{
+    border-radius: 0px 10px 10px 0px;
+    background: #000;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 16px;
+}
+.header_content{
+    background: url(../images/photo_1.png) no-repeat center  top/ cover;
+    height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.header_content-title{
+    color: #FFF;
+    font-size: 59px;
+    font-weight: 'RSB';
+    line-height: 70px;
+    margin-top: 21px;
+    margin-bottom: 10px;
+
+}
+.header_content-text{
+    color: #FFF;
+
+font-family: Rubik;
+font-size: 26px;
+font-family: 'RL';
+line-height: normal;
+text-transform: uppercase;
+}
+.main_clothes{
+    display: flex;
+}
+.main_clothes-item{
+    width: 25%;
+    background: #181D28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    transition: background 300ms;
+}
+.main_clothes-item:hover{
+    background: #6B4B6B;
+    cursor: crosshair;
+}
+.mian_clothes-title{
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'RSB';
+    line-height: 21px;
+    margin-top: 24px;
+    
+}
+.main_gear{
+    padding: 40px 0;
+
+}
+.title{
+    color: #000;
+    font-family: 'RSB';
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+}
+.main_gear-text{
+    color: #000;
+    font-size: 15px;
+    line-height: 18px;
+
+}
+.main_gear-text:first-of-type{
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+.main_tiro-img{
+    width: 100%;
+}
+.main_category h2 {
+    margin-top: 40px;
+}
+.main_category-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.main_category{
+    margin-bottom: 40px;
+}
+.main_category-li{
+    color: #000;
+    font-size: 15px;
+    line-height: 18px;
+}
+.main_category-list{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.footer{
+    background: #181D28;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+.footer_list{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer_link{
+    color: #FFF;
+    font-size: 20px;
+    line-height: normal;
+
+}
