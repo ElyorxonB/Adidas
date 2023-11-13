@@ -18,6 +18,15 @@ ul{
     padding: 0 15px;
     
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, purple,blue, green);
+    border-radius: 10px;
+}
+
+
 h1{
     font-family: 'RR';
 }
@@ -104,6 +113,7 @@ text-transform: uppercase;
 }
 .main_clothes{
     display: flex;
+    flex-wrap: wrap;
 }
 .main_clothes-item{
     width: 25%;
@@ -143,6 +153,8 @@ text-transform: uppercase;
     color: #000;
     font-size: 15px;
     line-height: 18px;
+    max-height: 150px;
+    overflow: auto;
 
 }
 .main_gear-text:first-of-type{
@@ -159,6 +171,8 @@ text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    flex-wrap: wrap;
+    
 }
 .main_category{
     margin-bottom: 40px;
@@ -190,4 +204,47 @@ text-transform: uppercase;
     font-size: 20px;
     line-height: normal;
 
+}
+
+/* Медиа запросы */
+
+@media(max-width:900px){
+    .main_clothes-item{
+        width: 50%;  
+    }
+    .header_form{
+        display: none;
+    }
+    .main_category-box{
+        gap: 25px;
+        justify-content: center;
+    }
+}
+
+@media(max-width:576px) {
+    .header_content{
+        height: 500px;
+    }
+    .header_content img {
+        width: 30%;
+    }
+    .header_content-title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .header_nav{
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    .footer{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .main_clothes-item{
+        width: 100%;
+    }
+    .title {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
